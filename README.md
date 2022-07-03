@@ -1,3 +1,3 @@
 ## Personal website
 
-[https://relativelyrehan.co](Personal_website_🤖)
+[Terminal 💻](https://relativelyrehan.co)

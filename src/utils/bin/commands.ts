@@ -119,6 +119,11 @@ export const vscode = async (args?: string[]): Promise<string> => {
   return `sublime text is the best!!`;
 };
 
+export const blog = async (args?: string[]): Promise<string> => {
+  window.open('https://blog.relativelyrehan.co', '_blank');
+  return `Permission denied: seems like you are not keen on reading`;
+};
+
 export const sudo = async (args?: string[]): Promise<string> => {
   window.open('https://www.youtube.com/watch?v=mAFMJ1LnQu8', '_blank'); // ...I'm sorry
   return `Permission denied: with little power comes... no responsibility? `;
@@ -138,5 +143,6 @@ export const banner = (args?: string[]): string => {
 
 Type 'help' to see the list of available commands.
 Type 'resume' to view my resume.
+Type 'blog'  to read my blogs.
 `;
 };

@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 import { History } from '../components/history/History';
 import { Input } from '../components/input';
 import React from 'react';
@@ -37,9 +37,30 @@ const TerminalPage: React.FC<IndexPageProps> = ({ inputRef }) => {
 
   return (
     <>
-      <Head>
-        <title>{config.title}</title>
-      </Head>
+      <NextSeo
+        title="LiveTerm"
+        description="Terminal themed porfolio by Rehan"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.relativelyrehan.co/terminal',
+          title: `${config.title}`,
+          description: 'Open Graph Description',
+          images: [
+            {
+              url: 'https://www.relativelyrehan.co/favicon.svg',
+              width: 800,
+              height: 600,
+              alt: 'Liveterm by rehan',
+            },
+            {
+              url: 'https://www.relativelyrehan.co/favicon.svg',
+              width: 800,
+              height: 600,
+              alt: 'Liveterm by rehan',
+            },
+          ],
+        }}
+      />
 
       <div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
         <div ref={containerRef} className="overflow-y-auto h-full">

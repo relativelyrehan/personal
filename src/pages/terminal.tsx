@@ -47,13 +47,13 @@ const TerminalPage: React.FC<IndexPageProps> = ({ inputRef }) => {
           description: 'Liveterm by rehan',
           images: [
             {
-              url: 'https://www.relativelyrehan.co/og-image.png',
+              url: 'https://www.relativelyrehan.co/og-image.jpg',
               width: 800,
               height: 600,
               alt: 'Liveterm by rehan',
             },
             {
-              url: 'https://www.relativelyrehan.co/og-image.png',
+              url: 'https://www.relativelyrehan.co/og-image.jpg',
               width: 800,
               height: 600,
               alt: 'Liveterm by rehan',

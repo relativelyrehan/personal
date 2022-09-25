@@ -44,7 +44,7 @@ const TerminalPage: React.FC<IndexPageProps> = ({ inputRef }) => {
           type: 'website',
           url: 'https://www.relativelyrehan.co/terminal',
           title: `${config.title}`,
-          description: 'Open Graph Description',
+          description: 'Liveterm by rehan',
           images: [
             {
               url: 'https://www.relativelyrehan.co/favicon.svg',

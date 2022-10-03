@@ -11,10 +11,10 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <>
-      {/* <script
+      <script
         async
         src="https://dancing-beignet-ffe33d.netlify.app/script.js"
-      /> */}
+      />
       <Head>
         <meta
           name="viewport"

@@ -37,7 +37,6 @@ const TerminalPage: React.FC<IndexPageProps> = ({ inputRef }) => {
 
   return (
     <>
-      <script src="https://dancing-beignet-ffe33d.netlify.app" async />
       <NextSeo
         title="LiveTerm"
         description="Terminal themed porfolio by Rehan"

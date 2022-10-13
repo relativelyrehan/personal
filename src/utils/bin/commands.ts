@@ -131,18 +131,36 @@ export const sudo = async (args?: string[]): Promise<string> => {
 
 // Banner
 export const banner = (args?: string[]): string => {
-  return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
-
-Type 'help' to see the list of available commands.
-Type 'resume' to view my resume.
-Type 'blog'  to read my blog.
+  if (window.innerWidth > 1200) {
+    return `
+    █████        ███                       ███████████                                   
+    ░░███        ░░░                       ░█░░░███░░░█                                   
+     ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
+     ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
+     ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
+     ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
+     ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
+    ░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
+    
+    Type 'help' to see the list of available commands.
+    Type 'resume' to view my resume.
+    Type 'blog'  to read my blog.
+    `;
+  } else {
+    return `
+  Type 'help' to see the list of available commands.
+  Type 'resume' to view my resume.
+  Type 'blog'  to read my blog.
 `;
+  }
+};
+
+export const open = (args?: string[]): string => {
+  const reg =
+    /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/;
+  if (reg.test(args.join())) {
+    window.open(`https://${args.join()}`);
+    return `opening ${args.join()}`;
+  }
+  return `Fail to open "${args.join()}"`;
 };

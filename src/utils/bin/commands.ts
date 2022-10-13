@@ -143,6 +143,6 @@ export const banner = (args?: string[]): string => {
 
 Type 'help' to see the list of available commands.
 Type 'resume' to view my resume.
-Type 'blog'  to read my blogs.
+Type 'blog'  to read my blog.
 `;
 };

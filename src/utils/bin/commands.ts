@@ -129,6 +129,12 @@ export const sudo = async (args?: string[]): Promise<string> => {
   return `Permission denied: with little power comes... no responsibility? `;
 };
 
+export const xmas = async () => {
+  return `
+    <div style="font-family:monospace;text-align:center;color:#094"><span style="color:#D00">O</span><br>+++<br>+++++<br>++++<span style="color:#D00">O</span>++<br>+++++++++<br>+<span style="color:#D00">O</span>+++++++++<br>+++<span style="color:#D00">O</span>+++++++++<br>+++<span style="color:#D00">O</span>+++++++++++<br>+<span style="color:#D00">O</span>+++++++++<br>+++<span style="color:#D00">O</span>+++++++++<br>+++<span style="color:#D00">O</span>+++++++++++<br>+<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++<br>++++++++++<span style="color:#D00">O</span>++++++++<br>++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>+++<br>+++++++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span><br>++++++++++++<span style="color:#D00">O</span>++++++++++++<br><span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>+++++++<br>+++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++++<br>++++++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>+++<br>+++++++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++++<br>++++++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>+++++++<br>+++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++++++++++++<br><span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++++++<br>++++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++<br>++++++++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>+++++++<br>+++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>+<br>+++++++++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++++++++++<br>++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++++++++<br>++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++++++++++++<span style="color:#D00">O</span>++++++++<br><span style="color:#640">|#|<br>|#|<br>|#|<br></span></div>
+  `;
+};
+
 // Banner
 export const banner = (args?: string[]): string => {
   if (window.innerWidth > 1200) {
@@ -145,12 +151,14 @@ export const banner = (args?: string[]): string => {
     Type 'help' to see the list of available commands.
     Type 'resume' to view my resume.
     Type 'blog'  to read my blog.
+    Type 'xmas' for a surprise.
     `;
   } else {
     return `
   Type 'help' to see the list of available commands.
   Type 'resume' to view my resume.
   Type 'blog'  to read my blog.
+  Type 'xmas' for a surprise.
 `;
   }
 };

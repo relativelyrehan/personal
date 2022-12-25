@@ -28,3 +28,14 @@ export const getQuote = async () => {
     quote: `“${data.content}” — ${data.author}`,
   };
 };
+
+export const getMeaning = async (word: string) => {
+  try {
+    const { data } = await axios.get(
+      `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`,
+    );
+    return data[0]?.meanings[0]?.definitions[0]?.definition;
+  } catch (error) {
+    return error.response.data.message;
+  }
+};

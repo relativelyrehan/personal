@@ -1,6 +1,6 @@
 // // List of commands that require API calls
 
-import { getProjects } from '../api';
+import { getMeaning, getProjects } from '../api';
 import { getQuote } from '../api';
 import { getReadme } from '../api';
 import { getWeather } from '../api';
@@ -33,4 +33,13 @@ export const weather = async (args: string[]): Promise<string> => {
   }
   const weather = await getWeather(city);
   return weather;
+};
+
+export const define = async (args: string[]): Promise<string> => {
+  const word = args.join('');
+  if (!word) {
+    return 'Usage: define [word]. Example define hello';
+  }
+  const definition = await getMeaning(word);
+  return `<p>${definition}</p>`;
 };

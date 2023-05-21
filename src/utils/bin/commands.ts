@@ -124,6 +124,11 @@ export const blog = async (args?: string[]): Promise<string> => {
   return `Permission denied: seems like you are not keen on reading`;
 };
 
+export const portfolio = async (args?: string[]): Promise<string> => {
+  window.open('https://relativelyrehan.co', '_blank');
+  return `Permission denied: seems like you are not keen on reading`;
+};
+
 export const sudo = async (args?: string[]): Promise<string> => {
   window.open('https://www.youtube.com/watch?v=mAFMJ1LnQu8', '_blank'); // ...I'm sorry
   return `Permission denied: with little power comes... no responsibility? `;
@@ -151,14 +156,14 @@ export const banner = (args?: string[]): string => {
     Type 'help' to see the list of available commands.
     Type 'resume' to view my resume.
     Type 'blog'  to read my blog.
-    Type 'xmas' for a surprise.
+    Type 'portfolio' to view my portfolio.
     `;
   } else {
     return `
   Type 'help' to see the list of available commands.
   Type 'resume' to view my resume.
   Type 'blog'  to read my blog.
-  Type 'xmas' for a surprise.
+  Type 'portfolio' to view my portfolio.
 `;
   }
 };

@@ -1,14 +1,14 @@
 {
   "readmeUrl": "https://raw.githubusercontent.com/relativelyrehan/relativelyrehan/master/README.md",
-  "title": "LiveTerm",
+  "title": "PortTerminal",
   "name": "Rehan Alam",
-  "ascii": "liveterm",
+  "ascii": "PortTerminal",
   "social": {
     "github": "relativelyrehan",
     "linkedin": "relativelyrehan"
   },
   "email": "rehan18alam@gmail.com",
-  "ps1_hostname": "liveterm",
+  "ps1_hostname": "PortTerminal",
   "ps1_username": "visitor",
   "repo": "https://github.com/",
   "resume_url": "/rehan-resume.pdf",

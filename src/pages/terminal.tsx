@@ -38,25 +38,25 @@ const TerminalPage: React.FC<IndexPageProps> = ({ inputRef }) => {
   return (
     <>
       <NextSeo
-        title="LiveTerm"
+        title="PortTerminal"
         description="Terminal themed porfolio by Rehan"
         openGraph={{
           type: 'website',
           url: 'https://www.relativelyrehan.co/terminal',
           title: `${config.title}`,
-          description: 'Liveterm by rehan',
+          description: 'PortTerminal by rehan',
           images: [
             {
               url: 'https://www.relativelyrehan.co/og-image.jpg',
               width: 800,
               height: 600,
-              alt: 'Liveterm by rehan',
+              alt: 'PortTerminal by rehan',
             },
             {
               url: 'https://www.relativelyrehan.co/og-image.jpg',
               width: 800,
               height: 600,
-              alt: 'Liveterm by rehan',
+              alt: 'PortTerminal by rehan',
             },
           ],
         }}
